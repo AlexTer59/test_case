@@ -9,3 +9,5 @@ def about(request):
     return HttpResponse("<h4>Страница о нас</h4>")
 
 
+def location(request):
+    return HttpResponse("<h4>Мы тут</h4>")
