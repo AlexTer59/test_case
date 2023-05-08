@@ -2,7 +2,12 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     data = {'title': 'Главная страница!!',
-            'values': ['Some', 'Hello', '123']
+            'values': ['Some', 'Hello', '123'],
+            'obj': {
+                'car': 'BMW',
+                'age': 18,
+                'hobby': 'football'
+                }
             }
     return render(request, 'main/index.html', data)
 
