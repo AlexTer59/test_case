@@ -8,7 +8,9 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam itaque nostrum perferendis porro qui! Ab culpa fugit modi officiis qui.</p>
         <button class="btn btn-warning">На страницу про нас</button>
         {% for el in values %}
-            <p> {{ el }}</p>
+            {% if el == 'Hello' %}
+                <p> {{ el }}</p>
+            {% endif %}
         {% endfor %}
         {% for el in obj %}
             <p> {{ el }}</p>
